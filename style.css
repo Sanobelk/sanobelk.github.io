@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+html{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    padding:0px;
+    margin:0px;
+}
+
+/*     Navagation Bar */
+
+nav{
+    position:sticky;
+    top:0px;
+    left:0px;
+    background-color:black;
+    height:50px;
+    width:100vw;
+}
+
+#menu_icon{
+    position:absolute;
+    top:2px;
+    left:5px;
+    width:45px;
+    height:45px;
+}
+
+/*     "MENU" Prompt       */
+#menu_text{
+    display:block;
+    color:white;
+    position:absolute;
+    left:55px;
+    top:12px;
+    font-size:1.5rem;
+    font-family:'Gilda Display', cursive;
+    font-weight:bold;
+}
+
+/*Top Menu Selection */
+
+.top_menu_selection{
+    display:none;
+    position:absolute;
+    top:0px;
+    margin-top:30px;
+    margin-left:55px;
+}
+
+.top_menu_selection ul{
+    list-style-type:none;
+}
+.top_menu_selection li{
+    width:100vw;
+    margin-top:10px;
+    margin-left:-40px;
+}
+
+.top_menu_selection #header_image{
+    width:230px;
+}
+
+/* Nav Links */
+.top_menu_selection a{
+    text-decoration:none;
+    font-family: 'Gilda Display', serif;
+    font-weight:bold;
+    font-size:1.5rem;
+    color:white;
+}
+
+.top_menu_selection a:hover{
+    color:lightblue;
+}
+
+.top_menu_selection .active{
+    background-color:white;
+}
+
+.top_menu_selection .active_text{
+    color:black;
+}
+
+.top_menu_selection img{
+    margin-top:20px;
+    margin-left:-10px;
+    margin-right:auto;
+    width:100%;
+    border-style:groove;
+    border-color:white;
+    border-width:5px;
+}
+
+/* Home Page */
+
+
+/*Container Mobile*/
+.container_mobile{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.header_container{
+    background-color:black;
+    color:white;
+    height:100vh;
+    text-align:center;
+    font-family:'Cinzel Decorative';
+    font-size:1.3rem;
+}
+
+.header_container h1{
+}
+
+#home_header_image{
+    width:100vw;
+    height:auto;
+}
+
+.home_paragraph_container{
+    color:black;
+    font-family:Arial;
+    width:90vw;
+}
