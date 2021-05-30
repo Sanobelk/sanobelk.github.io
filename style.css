@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
 
+
+:root{
+    --main-bg-color:rgb(230, 230, 230);
+    --main-text-color:rgb(68, 68, 68);
+}
+
 html{
     padding:0px;
     margin:0px;
@@ -18,9 +24,10 @@ nav{
     position:sticky;
     top:0px;
     left:0px;
-    background-color:black;
+    background-color:var(--main-bg-color);
     height:50px;
     width:100vw;
+    border-bottom:3px solid darkgray;
 }
 
 #menu_icon{
@@ -34,7 +41,7 @@ nav{
 /*     "MENU" Prompt       */
 #menu_text{
     display:block;
-    color:white;
+    color:var(--main-text-color);
     position:absolute;
     left:55px;
     top:12px;
@@ -72,7 +79,7 @@ nav{
     font-family: 'Gilda Display', serif;
     font-weight:bold;
     font-size:1.5rem;
-    color:white;
+    color:var(--main-text-color);
 }
 
 .top_menu_selection a:hover{
@@ -109,8 +116,8 @@ nav{
 }
 
 .header_container{
-    background-color:black;
-    color:white;
+    /*background-color:var(--main-bg-color);*/
+    color:var(--main-text-color);
     height:100vh;
     text-align:center;
     font-family:'Cinzel Decorative';
@@ -118,15 +125,26 @@ nav{
 }
 
 .header_container h1{
+    margin-top:10px;
 }
 
 #home_header_image{
-    width:100vw;
+    margin-top:5px;
+    margin-left:-5px;
+    width:95vw;
     height:auto;
+    box-shadow:5px 5px 5px rgb(104, 104, 104);
 }
 
 .home_paragraph_container{
-    color:black;
-    font-family:Arial;
+    background-color:var(--main-bg-color);
     width:90vw;
+}
+
+.home_paragraph_container p{
+    color:var(--main-text-color);
+    font-family:Arial;
+    line-height:1.7rem;
+    text-align:left;
+    padding:10px 20px 10px 20px;
 }
