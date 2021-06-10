@@ -6,6 +6,8 @@ menu_button.addEventListener("click",function(){ //click on the button
     let nav_bar = document.querySelector('nav');
     let menu_selection = document.querySelector('.top_menu_selection');
     let menu_text = document.getElementById('menu_text');
+
+    //CLOSING THE MENU
     if(menu_selection.style.display == "block"){ //if the menu_selection display style is block
         nav_bar.style.height="50px"; //lessen the height on the nav_bar
         menu_selection.style.display="none"; //hide the URLS
@@ -13,6 +15,7 @@ menu_button.addEventListener("click",function(){ //click on the button
         document.querySelector('html').style.overflow="visible";
         document.querySelector('html').style.position="static";
 
+    //OPENING THE MENU//
     }else{ //if the menu_selection display style is none (by default)
         nav_bar.style.height="100vh"; //extend
         menu_selection.style.display="block"; //display the URLS
