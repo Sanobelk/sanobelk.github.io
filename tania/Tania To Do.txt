@@ -1,0 +1,3 @@
+road_to_tehran.html : Album Cover resizing funny. Add max-width.
+lullaby_project.html : Album Cover resizing funny. Add max-height.
+documentary.html: documentary resizing funny, mid break away. Lessen the max width.
