@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+:root{
+    --h-font:'Autour One',serif;
+    --s-font:'Jua',serif;
+    --main-color:#e1d56f;
+    --secondary-color:#bca465;
+    --font-color:#4d4722;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+    font-size:16px;
+}
+
+body{
+    background-color:lightgray;
+}
+
+h2{
+    color:var(--font-color);
+    font-family:var(--s-font);
+    text-align:center;
+}
+
+h3{
+    color:var(--font-color);
+    font-family:var(--s-font);
+    text-align:center;
+}
+
+p{
+    line-height:1.6rem;
+    font-family:arial;
+    padding:0px 10px;
+    
+}
+
+li{
+    line-height:1.6rem;
+    font-family:arial;
+}
+
+.main{
+    height:auto;
+}
+
+.header{
+width:100%;
+background-color:var(--secondary-color);
+}
+
+.header-container{
+max-width:1100px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:var(--font-color);
+}
+
+.header-container h1{
+    font-family:var(--h-font);
+    margin-left:20px;
+}
+
+.header-container #heading_text a{
+    color:var(--font-color);
+    text-decoration:none;
+}
+
+#heading_text a:hover{
+    color:white;
+    text-decoration:underline;
+}
+
+.nav-links li{
+    display:inline-block;
+    font-family:var(--s-font);
+    margin-right:20px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--font-color);
+}
+
+.nav-links a:hover{
+    color:white;
+    text-decoration:underline;
+}
+
+.main{
+    background-color:white;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    max-width:1100px;
+}
+
+.image-container{
+    max-width:600px;
+    margin:0 auto;
+}
+
+.text-container{
+    max-width:600px;
+    margin:0 auto;
+}
+
+/*HOME*/
+
+
+#home-container{
+    height:auto;
+    max-width:1100px;
+    padding:10px;
+    /*background-color:plum;*/
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    overflow-y:hidden;
+}
+
+
+#home-container-image-container{
+    width:550px;
+    margin:auto;
+}
+
+#masons-helping-paw-logo{
+    width:100%;
+}
+
+#home-container-text h2{
+    font-size:2rem;
+    text-align:center;
+    font-family:var(--s-font);
+    color:var(--font-color);
+}
+
+/* ABOUT */
+
+#about-container{
+    height:auto;
+    padding-top:20px;
+    max-width:1100px;
+    /*background-color:plum;*/
+}
+
+#about-image{
+    width:100%;
+}
+
+
+
+/*   ADOPT   */
+
+#adopt-container{
+    height:auto;
+    padding-top:20px;
+    max-width:1100px;
+    /*background-color:plum;*/
+}
+#adopt-image{
+    width:100%;
+}
+
+/* ///////// */
+
+
+/*    DONATE    */
+
+#donate-container{
+    max-width:1100px;
+    padding-top:20px;
+    padding-bottom:40px;
+    height:auto;
+    /*background-color:plum;*/
+}
+
+#donate-image{
+    width:100%;
+}
+
+#donation_links{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#donation_links img{
+    padding:10px;
+    width:100px;
+    height:auto;
+}
+
+
+/* ///////////// */
+
+/* CONTACT */
+
+#contact-container{
+    padding-top:20px;
+    padding-bottom:20px;
+    max-width:1100px;
+    height:auto;
+    /*background-color:plum;*/
+}
+
+#contact-image{
+    width:100%;
+}
+
+
+
+/* ///////////// */
+
+
+.footer{
+    padding-top:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:250px;
+    background-color:var(--secondary-color);
+    height:auto;
+}
+
+.footer-container{
+    margin:auto;
+    width:1100px;
+    display:flex;
+    justify-content:space-around;
+    color:var(--font-color);
+    font-family:var(--s-font);
+}
+
+.footer-box{
+    width:300px;
+}
+
+#footer-left{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-right:3px solid var(--font-color);
+    text-align:justify;
+    padding-right:30px;
+}
+
+
+#footer-mid{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#footer-mid-top{
+    color:white;
+    font-family:var(--s-font);
+    font-size:2rem;
+}
+
+#footer-mid-top p{
+    margin:0;
+    text-shadow:1px 1px 5px black;
+}
+
+#footer-mid-bot{
+    display:flex;
+    justify-content:space-around;
+}
+
+#footer-mid img{
+    width:50px;
+    padding:10px;
+    height:auto;
+}
+
+
+
+#footer-right{
+    text-align:justify;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-left:3px solid var(--font-color);
+    padding-left:30px;
+}
+
+
+/*Media Queries*/
+@media(max-width:1100px){
+
+    .main{
+        overflow-y:hidden;
+        width:100%;
+    }
+
+    .footer{
+        height:auto;
+    }
+    .footer-container{
+        width:85%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    .footer-box{
+        width:100%;
+    }
+    #footer-left{
+        margin-top:10px;
+    }
+
+    #about-container,
+    #adopt-container,
+    #donate-container,
+    #contact-container{
+        padding-top:20px;
+    }
+}
+
+@media(max-width:950px){
+    .header-container{
+        flex-direction:column;
+    }
+    .header-container h1{
+        padding-right:10px;
+    }
+}
+@media(max-width:720px){
+    #home-container-text h2{
+        font-size:1.8rem;
+    }
+}
+@media(max-width:640px){
+    #home-container-text h2{
+        font-size:1.6rem;
+    }
+}
+@media(max-width:570px){
+    #home-container-image-container{
+        width:90%;
+    }
+}
+@media(max-width:520px){
+    .header-container h1{
+        font-size:1.3rem;
+    }
+}
+@media(max-width:430px){
+    .header-container h1{
+        font-size:1.2rem;
+    }
+
+    .header-container li{
+        font-size:.8rem;
+    }
+}
+
+@media(max-width:400px){
+    .header-container ul{
+        width:100vw;
+        display:flex;
+        justify-content:center;
+        background-color:var(--main-color);
+       margin-left:-30px;
+       margin-bottom:0;
+       position:fixed;
+       padding-top:15px;
+       padding-bottom:15px;
+       bottom:0;
+       left:0;
+       border-top:2px solid var(--font-color);
+    }
+
+    .footer{
+        height:600px;
+    }
+    #footer-copyright{
+        margin-bottom:100px;
+    }
+}
+
+@media(max-width:375px){
+
+    .footer{
+        padding-top:50px;
+    }
+}
+
+@media(max-width:340px){
+    .main{
+        overflow-y: hidden;
+    }
+    #home-container-text{
+        text-align:center;
+    }
+
+    #footer-left{
+        padding-right:0px;
+        border-right:none;
+    }
+
+    #footer-right{
+        padding-left:0px;
+        border-left:none;
+    }
+}
+
+@media (min-width:401px){
+    header{
+        position:fixed;
+    }
+    .main{
+        padding-top:150px;
+    }
+    #about-container, #adopt-container,#donate-container,
+    #contact-container{
+        padding-top:150px;
+    }
+}
