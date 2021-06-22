@@ -10,35 +10,52 @@
 </head>
 <body>
 
-<div id="container">
+    <div id="container">
 
-    <div id="player-side" class="card">
+        <div class="card">
 
-        <div id="player-side-image-container" class="image-container">
-        <img src="" id="player-side-image">
+            <div class="top-container">
+                <div class="img-container">
+                    <img src="" id="player-side-image">
+                </div>
+                <div class="img-container">
+                    <img src="" id="opponent-image">
+                </div>
+
+
+            </div>
+        
+            <div class="choices">
+                    <div id="rock" class="btn">Rock</div>
+                    <div id="paper"class="btn">Paper</div>
+                    <div id="scissors"class="btn">Scissors</div>
+            </div>
+        </div><!--card-->
+
+        <div class="message-container">
+            <div class="wincount">
+                Win Count: <span id="count_message">0</span>
+            </div>
+    
+            <div class="result">
+                Result: <span id="result_message">
+                </span>
+            </div>
+
+            <div class="games-played">
+                Games Played: <span id="games_message">0</span>
+                </div>
+        
         </div>
 
-        <div id="player-side-choices">
-            <div id="rock" class="btn">Rock</div>
-            <div id="paper"class="btn">Paper</div>
-            <div id="scissors"class="btn">Scissors</div>
+        <div class="message-container-buttons">
+
+            <div id="reset-btn">Reset</div>
+            <div id="win-percent-btn">Calculate Win Percentage</div>
+            <div id="win-percent-result"></div>
+
         </div>
-    
-    </div>
 
-    <div id="opponent-side" class="card">
-         <div id="opponent-image-container" class="image-container">
-        <img src="" id="opponent-image">
-        </div>
-    
-    
-    </div>
-
-</div>
-
-    <div id="message-container">
-    Win Count: <span id="count_message">0</span><br>
-    Result: <span id="result_message"></span>
     </div>
     
 </body>
