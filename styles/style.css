@@ -1,0 +1,759 @@
+:root{
+    --xp-blue: #285fda;
+    --xp-blue-border:#3589e0;
+    --xp-green:#44ac45;
+    --xp-green-border:#73b263;
+    --xp-window-blue:#0055e5;
+    --login-darkblue:#1c31a4;
+    --login-lightblue:#5a7edc;
+    --login-bottom-left:#3832ac;
+    --login-border:#8cacfd;
+}
+
+html{
+    padding:0;
+    margin:0;
+    font-size:16px;
+    overflow-y: hidden;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background:url('/photos/bliss_background.webp')no-repeat center fixed;
+    overflow:hidden;
+}
+
+
+main{
+}
+
+/*Task Bar*/
+
+header{
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:50px;
+    width:100%;
+    background-image:linear-gradient(#285fda,#3589e0); 
+    border-top:3px solid var(--xp-blue-border);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    display:none;
+}
+
+/*Start Button*/
+
+nav{
+    width:150px;
+    height:50px;
+    background-image:linear-gradient(var(--xp-green-border),var(--xp-green),var(--xp-green-border));
+    border-radius:5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+/*Start Button Active*/
+
+.menu-active{
+    background-image:linear-gradient(#1f6823,#1f683a, #1f6823);
+}
+
+.menu-inactive{
+    background-image:linear-gradient(var(--xp-green-border),var(--xp-green),var(--xp-green-border));
+}
+
+#start-button-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+nav #start-button-icon{
+    width:30px;
+    height:auto;
+}
+
+nav #start-button-txt{
+    font-size:2rem;
+    font-family:arial;
+    font-weight:bold;
+    font-style:italic;
+    color:white;
+    text-shadow:1px 1px 1px darkgreen;
+}
+
+
+nav:hover{
+    background-image:linear-gradient(#1f6823,#1f683a, #1f6823);
+}
+
+#start-menu-container{
+    background-color:white;
+    position:absolute;
+    bottom:53px;
+    left:0px;
+    width:600px;
+    height:700px;
+    border-top-right-radius:15px;
+    border-top-left-radius:15px;
+}
+
+.hidden{
+    display:none;
+}
+
+/*Menu Design*/
+
+#menu-top{
+    height:100px;
+    width:100%;
+    background-image:linear-gradient(var(--xp-blue),#448be7);
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    border-top:1px solid lightblue;
+
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+
+#menu-top h1{
+    color:white;
+    font-family:arial;
+    font-weight:bold;
+    padding-left:30px;
+    text-shadow:1px 1px 1px darkblue;
+}
+
+#menu-main-content{
+    display:flex;
+    height:520px;
+    width:100%;
+}
+
+#menu-main-content-left,#menu-main-content-right{
+    width:50%;
+    height:100%;
+}
+
+
+/*Menu Left*/
+
+#menu-main-content-left{
+margin:0;
+padding:0;
+}
+
+#menu-main-content-left ul{
+    list-style-type:none;
+}
+
+.menu-inner-button{
+    margin:0;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    margin-left:-30px;
+    font-family:arial;
+    color:darkslategray;
+    font-size:1.4rem;
+    font-weight:bold;
+    cursor:pointer;
+}
+.menu-inner-button:hover{
+    background-color:lightblue;
+    cursor:pointer;
+}
+.menu-inner-button img{
+    padding-right:15px;
+}
+
+.menu-icon{
+    width:50px;
+    height:auto;
+}
+
+
+
+
+
+/*Menu Right*/
+
+
+
+#menu-main-content-right{
+    background-color:#d1e1f8;
+    border-left:3px solid #b6c7d7;
+}
+
+#menu-main-content-right ul{
+    list-style-type:none;
+    margin-left:-30px;
+}
+
+#menu-main-content-right li:hover{
+    background-color:lightblue;
+}
+
+.right-side-button{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    font-size:1.2rem;
+    font-family:arial;
+    cursor:pointer;
+}
+.right-side-button img{
+    padding-right:20px;
+}
+
+
+
+/*Menu Bottom*/
+
+#menu-bottom{
+    width:100%;
+    height:79px;
+    background-image:linear-gradient(var(--xp-blue),#448be7);
+    display:flex;
+    justify-content:flex-end;
+}
+
+.menu-bottom-button{
+    display:flex;
+    align-items:center;
+    font-family:arial;
+    font-size:1.3rem;
+    color:white;
+    font-weight:bold;
+}
+
+#menu-bottom ul{
+    list-style-type:none;
+    display:flex;
+
+}
+
+#menu-bottom li{
+    padding-right:30px;
+
+}
+
+#menu-bottom li:hover{
+    cursor:pointer;
+    text-shadow:5px 5px 5px black;
+}
+
+#menu-bottom img{
+    padding-right:10px;
+}
+
+#menu-bottom a{
+    text-decoration:none;
+}
+
+#menu-button a:visited{
+    text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+
+/*Right side of task bar*/
+
+#taskbar-timer-container{
+    color:white;
+    padding-right:10px;
+}
+
+
+/*Desktop Window Design*/
+
+.desktop-window{
+    border:3px solid var(--xp-window-blue);
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    box-shadow:-3px 2px 10px  black;
+}
+
+.desktop-window-topbar{
+    background-color:var(--xp-window-blue);
+    height:35px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.desktop-window-topbar h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    padding-left:10px;
+    font-size:1.2rem;
+}
+
+.desktop-window-topbar ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    display:flex;
+}
+.desktop-window-topbar li{
+    padding-right:3px;
+}
+
+.desktop-window-button{
+    width:30px;
+    height:auto;
+    cursor:pointer;
+}
+
+
+
+/* About Window */
+
+
+
+
+
+#about-container{
+    position:absolute;
+    width: 600px;
+    height:600px;
+    bottom:300px;
+    left:500px;
+    background-color:white;
+}
+
+#about-content{
+    overflow-y:scroll;
+    padding:10px;
+    height:540px;
+    line-height:1.6rem;
+}
+
+
+
+
+
+/*My Work Container */
+
+#mywork-container{
+   position:absolute;
+    width: 500px;
+    height:600px;
+    bottom:200px;
+    left:100px;
+    background-color:white;
+    
+}
+
+#mywork-content{
+    overflow-y:scroll;
+    height:560px;
+    padding-left:10px;
+}
+
+.mywork-content-box{
+    display:flex;
+    width:100%;
+}
+
+.mywork-content-box-l{
+    display:flex;
+    width:40%;
+    height:auto;
+    padding:5px;
+}
+
+.mywork-content-img{
+    width:100%;
+}
+
+#calculator_image{
+    height:99%;
+}
+
+/*heading and paragraph description for each work*/
+.mywork-content-box-r{
+    display:flex;
+    flex-direction:column;
+    width:70%;
+    padding-right:10px;
+    padding-left:10px;
+    line-height:1.5rem;
+    text-align:center;
+}
+
+.mywork-content-box-r p{
+    margin-top:-10px;
+}
+
+
+
+/* Resources */ 
+
+#resources-container{
+    position:absolute;
+    width: 900px;
+    height:600px;
+    bottom:100px;
+    left:700px;
+    background-color:white;
+}
+
+#resources-content{
+    padding-left:10px;
+}
+
+
+
+
+/*
+
+
+--login-darkblue:#1c31a4;
+    --login-lightblue:#5a7edc;
+    --login-bottom-left:#3832ac;
+    --login-border:#8cacfd;
+
+
+*/
+
+
+
+/*Logon Screen*/ 
+#logon_screen{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    display:grid;
+    background-color:var(--login-lightblue);
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:100px auto 100px;
+    grid-template-areas:
+    "logintop logintop"
+    "loginmiddle loginmiddle"
+    "loginbot loginbot";
+    z-index:200;
+}
+
+#login-top{
+    grid-area:logintop;
+    background-color:var(--login-darkblue);
+}
+
+#login-bottom{
+    grid-area:loginbot;
+    background-image:linear-gradient(to right, var(--login-bottom-left),var(--login-darkblue));
+}
+
+#login-middle{
+    grid-area:loginmiddle;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+#login-middle-left{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#login-middle-left p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    color:white;
+    text-shadow:1px 1px 1px black;
+    font-size:1.2rem;
+}
+
+#login_pic_left{
+    width:130px;
+    height:130px;
+}
+
+#login-middle-right{
+    display:flex;
+    flex-direction:column;
+}
+
+#login-middle-right p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size:1.2rem;
+}
+
+#login-middle-right input{
+    padding:10px;
+    margin:10px;
+}
+#login-middle-right button{
+    padding:10px;
+}
+
+#about-container h3, #mywork-container h3, #resources-container h3{
+        font-size:24pt;
+        margin:0;
+        padding-top:10px;
+}
+
+#message-pop-up{
+    position:absolute;
+    bottom:70px;
+    left:0;
+    background-color:white;
+    width:150px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    color:var(--xp-blue);
+    border-radius:15px;
+    box-shadow:5px 5px 10px black;
+    text-align:center;
+    font-size:1.2rem;
+    margin:0;
+    padding:10px;
+}
+
+
+#github-link{
+}
+
+
+#desktop_icon_container{
+}
+
+#desktop-cat-picture-container{
+    position:absolute;
+    height:100px;
+    width:130px;
+    top:50px;
+    left:10px;
+    text-align:center;
+    cursor:pointer;
+    z-index:-101
+}
+
+#desktop-cat-picture-icon{
+    width:50px;
+    height:auto;
+    margin-bottom:-10px;
+    padding:0;
+    margin:0;
+}
+
+#desktop_icon_container p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    text-shadow:1px 1px 1px black;
+    
+    padding:0;
+    margin:0;
+}
+
+#cat-image-container{
+    width:600px;
+    height:433px;
+    position:absolute;
+    top:50px;
+    left:50px;
+    background-color:green;
+}
+
+#cat-content{
+    height:565px;
+    background-color:red;
+    width:600px;
+}
+
+#cat-content-image{
+    width:100%;
+    height:auto;
+}
+
+/*Media Queries*/
+
+
+
+@media screen and (min-width:320px) and (max-width:720px){
+
+    html{
+        overflow-y:hidden;
+        overflow-x:hidden;
+        margin:0;
+    }
+    body{
+        overflow-y:hidden;
+        overflow-x:hidden;
+    }
+
+/*Start Menu */    
+    #start-menu-container{
+        height:350px;
+        width:100vw;
+    }
+    /*Menu Design*/
+
+    #menu-top{
+        height:50px;
+        width:100%;
+    }
+
+    #menu-main-content{
+        display:flex;
+        height:220px;
+    }
+
+    /*Menu Left*/
+
+    #menu-main-content-left{
+    margin:0;
+    padding:0;
+    }
+
+    #menu-main-content-left ul{
+        list-style-type:none;
+    }
+
+    .menu-inner-button{
+        margin:0;
+        display:flex;
+        justify-content:flex-start;
+        align-items:center;
+        margin-left:-30px;
+        font-family:arial;
+        color:darkslategray;
+        font-size:1rem;
+        font-weight:bold;
+    }
+    .menu-inner-button:hover{
+        background-color:lightblue;
+        cursor:pointer;
+    }
+    .menu-inner-button img{
+        padding-right:10px;
+    }
+
+
+    /*Menu Right*/
+
+    .right-side-button{
+        font-size:1rem;
+    }
+    .right-side-button img{
+        padding-right:10px;
+    }
+
+    /*Menu Bottom*/
+
+    .menu-bottom-button{
+        display:flex;
+        align-items:center;
+        font-family:arial;
+        font-size:1rem;
+        color:white;
+        font-weight:bold;
+    }
+
+    #menu-bottom li{
+        padding-right:10px;
+    }
+
+    #menu-bottom img{
+        width:30px;
+        height:30px;
+    }
+
+    #github-link{
+        padding-top:9px;
+    }
+
+    /*End of Start Menu*/
+
+    /* About Window */
+
+    #about-container{
+        width: 98vw;
+        height:50%;
+        top:0px;
+        left:0px;
+        overflow-x:hidden;
+        overflow-y:hidden;
+    }
+
+    #about-content{
+        overflow-y:scroll;
+        padding:10px;
+        height:80%;
+        line-height:1.6rem;
+    }
+    #mywork-container{
+        width:98vw;
+        height:50%;
+        bottom:80px;
+        left:0px;
+        overflow-x:hidden;
+        overflow-y:hidden;
+    }
+    #mywork-content{
+        height:80%;
+        padding:10px;
+        line-height:1.6rem;
+    }
+
+    #resources-container{
+        width: 98vw;
+        height:50%;
+        top:50px;
+        left:0px;
+        overflow-x:hidden;
+        overflow-y:hidden;
+    }
+    #resources-content{
+        height:80%;
+        padding:10px;
+        line-height:1.6rem;
+        overflow-y:scroll;
+    }
+
+    #cat-image-container{
+        display:none;
+        width:98vw;
+        height:43%;
+        position:absolute;
+        top:0px;
+        left:0px;
+        background-color:green;
+    }
+
+    #cat-content{
+        display:none;
+        height:100%;
+        background-color:red;
+        width:100%px;
+    }
+
+    #cat-content-image{
+        display:none;
+        width:100%;
+        height:auto;
+    }
+
+    #desktop-cat-picture-container{
+    display:none;
+    }
+};
