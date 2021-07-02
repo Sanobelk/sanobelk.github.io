@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+<h1>Calculator built without a tutorial.</h1>
+<p>Under Construction.</p>
+
+<div id = "container">
+
+    <div id = "calculator_container">
+    
+        <!--First Row-->
+            <div class="screen" id="calculator_output"></div>
+            <div class="button" id="on_button" onclick="on_clear()">ON/AC</div>
+            <div class="button" id="button_mplus" onclick="memory_plus()">M+</div>
+            <div class="button" id="button_mminus"onclick="memory_minus()">M-</div>
+            <div class="button" id="button_mrc"onclick="memory_clear()">MRC</div>
+            <div class="button" id="button_gt"onclick="under_construction()">GT</div>
+            <div class="button" id="button_off" onclick="under_construction()">OFF</div>
+
+
+
+        <!--Second Row-->
+            <div class="square_button number_button" id="button_7">7</div>
+            <div class="square_button number_button" id="button_8">8</div>
+            <div class="square_button number_button" id="button_9">9</div>
+            <div class="button" id="button_divide" onclick="divide()">/</div>
+            <div class="button" id="button_unknown"onclick="under_construction()">></div>
+
+        <!--Third Row-->
+            <div class="square_button number_button" id="button_4">4</div>
+            <div class="square_button number_button" id="button_5">5</div>
+            <div class="square_button number_button" id="button_6">6</div>
+            <div class="button" id="button_multiply" onclick="multiply()">X</div>
+            <div class="button" id="button_modulus" onclick="under_construction()">%</div>
+
+        <!--Fourth Row-->
+            <div class="square_button number_button" id="button_1">1</div>
+            <div class="square_button number_button" id="button_2">2</div>
+            <div class="square_button number_button" id="button_3">3</div>
+            <div class="button" id="button_subtract" onclick="subtract()">-</div>
+            <div class="button" id="button_mu" onclick="under_construction()">MU</div>
+
+        <!--Fifth Row-->
+            <div class="square_button number_button" id="button_0">0</div>
+            <div class="square_button number_button" id="button_00">00</div>
+            <div class="square_button number_button" id="button_decimal">.</div>
+            <div class="button" id="button_add" onclick="add()">+</div>
+            <div class="button" id="button_equals" onclick="equals()">=</div>
+    </div>
+
+
+</div>
+
+
+</body>
+
+<script src="calculator.js"></script>
+</html>
