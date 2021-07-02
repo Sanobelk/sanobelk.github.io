@@ -147,23 +147,23 @@ about_maximize_button.addEventListener('click',function(){
 
     if(screen_width >= 720){
         if(container.classList.contains('window-max')){ //if window is maximized already
-        /*Default Values*/
 
             container.style.left = 500 + 'px'; //500
             container.style.bottom = 300 + 'px'; //300
             container.style.width = 600 + 'px'; //600
             container.style.height =  600 + 'px'; //600
+            container.style.top= '';
             container.querySelector('.desktop-window-topbar ul').style.height='';
             container.classList.remove('window-max');
             content.style.overflowY = 'scroll';
 
-        }else{
-            content.style.overflowY = 'hidden';
+        }else{ //if it's not.
             container.style.left = 0;
-            container.style.bottom = 0;
+            container.style.top= 0;
             container.style.width = '100%';
-            container.style.height = '100%';
+            container.style.height = '94%';
             container.style.zIndex = -100;
+            content.style.height = '90%';
             container.classList.add('window-max');
             container.querySelector('.desktop-window-topbar ul').style.height=30 + 'px';
         }
@@ -220,16 +220,17 @@ mywork_maximize_button.addEventListener('click',function(){
             container.style.bottom = 200 + 'px';
             container.style.width = 500 + 'px';
             container.style.height =  600 + 'px';
+            container.style.top= '';
             container.querySelector('.desktop-window-topbar ul').style.height='';
             container.classList.remove('window-max');
             content.style.height = '';
         }else{
             container.style.left = 0;
-            container.style.bottom = 0;
+            container.style.top = 0;
             container.style.width = '100%';
-            container.style.height = '100%';
+            container.style.height = '94%';
             container.style.zIndex = -100;
-            content.style.height = '100%';
+            content.style.height = '90%';
             container.classList.add('window-max');
             container.querySelector('.desktop-window-topbar ul').style.height=30 + 'px';
         }
@@ -271,12 +272,13 @@ resources_maximize_button.addEventListener('click',function(){
             container.style.height = '50%';
             container.style.top = 50 + 'px';
             container.style.left = 0 + 'px';
+            container.style.top= '';
             container.classList.remove('window-max');
             content.style.overflowY = 'scroll';
             content.style.height = '80%';
         }else{ //if it's not , max it out.
             content.style.overflowY = 'scroll';
-            content.style.height = '90%';
+            content.style.height = '80%';
             container.style.left = 0;
             container.style.top = 0;
             container.style.width = '98%';
@@ -310,13 +312,14 @@ resources_maximize_button.addEventListener('click',function(){
             container.querySelector('.desktop-window-topbar ul').style.height='';
             container.classList.remove('window-max');
             content.style.height = '';
+            container.style.top= '';
         }else{
             container.style.left = 0;
-            container.style.bottom = 0;
+            container.style.top = 0;
             container.style.width = '100%';
-            container.style.height = '100%';
+            container.style.height = '94%';
             container.style.zIndex = -100;
-            content.style.height = '100%';
+            content.style.height = '90%';
             container.classList.add('window-max');
             container.querySelector('.desktop-window-topbar ul').style.height=30 + 'px';
         }
