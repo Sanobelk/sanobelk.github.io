@@ -5,20 +5,304 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
 </head>
+
 <body>
+
+    <header>
+
+        <nav id="nav" class="menu-inactive" title="Click Me to Start">
+            <div id="start-button-container">
+                <img id="start-button-icon" src="/photos/start_smiley.png">
+                <div id="start-button-txt">start</div>
+            </div><!--start-button-container--> 
+        </nav>
+        <div id="start-menu-container" class="hidden">
+
+            <div id="menu-top">
+                <h1>Admin</h1>
+            </div>
+
+            <div id="menu-main-content">
+                <div id="menu-main-content-left">
+                <ul>
+                    <li id="about-button" class="menu-inner-button" title="About Me!"><img id="about-icon" class="menu-icon" src="/photos/iconfinder_20147_windows_messenger_icon_128px.png">About</li>
+                    <li id="mywork-button" class="menu-inner-button" title="Stuff I've Made."><img id="work-icon" class="menu-icon" src="/photos/iconfinder_40885_windows_icon_128px.png">My Work</li>
+                    <li id="myresume-button" class="menu-inner-button" title="My Resume."><img id="resume-icon" class="menu-icon" src="/photos/resume.png">Resume</li>
+                </ul>
+                </div>
+
+                <div id="menu-main-content-right">
+                    <ul>
+                        <li id="resources-button" class="right-side-button" title="Resources I've found useful."><img src="/photos/chain.png" id="resources-icon" class="menu-icon">Resources</li>
+                    
+                    </ul>
+                </div>
+            </div>
+
+
+            <div id="menu-bottom">
+                <ul>
+                    <li id="logoff-button" class="menu-bottom-button" title="Logoff"><img id="logout-icon" class="menu-icon" src="photos/exit.png"> Log Off</li>
+
+                    <a id="github-link" href="https://sanobelk.github.io/"><li id="github-button" class="menu-bottom-button" title="Visit my Github"><img id="github-icon" class="menu-icon" src="/photos/github.png">Github</li></a>
+
+                    <li id="contact-button" class="menu-bottom-button" title="Contact Me">
+                        <img src="/photos/phone.png" id="contact-icon" class="menu-icon">Contact
+                    </li>
+                </ul>
+            
+            </div>
+
+
+
+
+
+
+            </div><!--start-menu-container-->
+        <div id="taskbar-timer-container"><div id="taskbar-time">
+        </div></div>
+        
+    </header>
+
+    <main>
+
+
+        <div id="about-container" class="desktop-window hidden"> <!--add hidden as class-->
+            <div class="desktop-window-topbar">
+                <h2>ABOUT</h2>
+                <ul class="desktop-window-nav">
+                    <li><img src="/photos/minimize_button.png" class="desktop-window-button minimize-button" id="about_minimize_button" title="Minimize"> </li>
+                    <li><img src="/photos/maximize_button.png" class="desktop-window-button maximize-button" id="about_maximize_button" title="Maxmize"> </li>
+                    <li><img src="/photos/close_button.png" class="desktop-window-button close-button" id="about_close_button" title="Close"></li>
+                </ul>
+            </div>
+            <section id="about-content">
+            
+                <h3>About Me</h3>
+                <p>My name is *redacted* and I'm an aspiring web developer. Currently I am wrapping up a degree in Computer Science.</p>
+                
+                <p>Going against the grain, C++ was my very first programming language. At first it was very difficult to wrap my head around. Infact, I remember my first roadblock vividly - the dreaded for loop. After many nights of study and energy drinks, it all started to make sense. As soon as everything began to "click", I fell in love with programming.</p>
+                
+                <p>So if I'm familiar with C++, why am I working on web development instead? Well, during one of my college semesters, I took a class that focused on devloping websites. Since then, it's reignited a hidden flame inside of me that is an interest in web development. You see, during my childhood, I would occasionally fool around with WYSIWYG editors(Coffee Cup especially). I would use the drag and drop tools to put together very basic websites, but every once in a while I'd type out my own HTML tags. And that made me feel like I was the coolest kid ever.</p>
+
+                <p>I hope that's still the case today.</p>
+
+                <p>Another reason why I switched to web development is because I'm a visual person. I enjoy putting things together that I can see. I like things that look nice. And that's pretty much it. While I'm not a simple man by any means, sometimes I have simple reasons.</p>
+
+                <p>That's all I have to say about me. If I seem cool to you or you like Windows XP as much as I do, feel free to reach out. I look forward to hearing from you.</p>
+
+                <p><a href="mailto:email@gmail.com">Email-Me</a></p>
+            
+            </section>
+        </div>
+
+        <div id="mywork-container" class="desktop-window hidden">
+            <div class="desktop-window-topbar">
+                <h2>MY WORK</h2>
+                <ul class="desktop-window-nav">
+                    <li><img src="/photos/minimize_button.png" class="desktop-window-button minimize-button" id="mywork_minimize_button" title="Minimize"> </li>
+                    <li><img src="/photos/maximize_button.png" class="desktop-window-button maximize-button" id="mywork_maximize_button" title="Maxmize"> </li>
+                    <li><img src="/photos/close_button.png" class="desktop-window-button close-button" id="mywork_close_button" title="Close"></li>
+                </ul>
+            </div>
+
+            <section id="mywork-content">
+                <h3>My Work</h3>
+
+                <p>Here are a few things I've put together.</p>
+
+                <div class="mywork-content-box">
+                    
+                    
+                    <div class="mywork-content-box-l">
+                    
+                        <a href="/tania/index.html" title="TaniaProduct.com" target="blank_"><img class="mywork-content-img" src="work/road_to_tehran.PNG"></a>
+                    
+                    </div>
+                
+                    <div class="mywork-content-box-r">
+                    <!--<h4>TaniaProductions.com</h4>-->
+                    <h4>No Title</h4>
+                    <p>A website built with HTML, CSS, and plain ol' Javascript. Very proud of the mobile hamburger menu. I figured that one out without a tutorial.</p>
+                    
+                    </div>
+
+                        
+                </div>
+
+                <div class="mywork-content-box">
+                    
+                    
+                    <div class="mywork-content-box-l">
+                    
+                        <a href="/mason/index.html" title="MasonsHelpingPaw.com" target="blank_"><img class="mywork-content-img" src="work/masons.PNG"></a>
+                    
+                    </div>
+                
+                    <div class="mywork-content-box-r">
+                    <!--<h4>Mason's Helping Paw</h4>-->
+                    <h4>Nonprofit Cat Rescue</h4>
+                    <p>A website made for a local nonprofit cat rescue operation. My first real experience with responsive design for multiple devices.</p>
+                    
+                    
+                    
+                    </div>
+                </div>
+
+                 <div class="mywork-content-box">
+                    
+                    
+                    <div class="mywork-content-box-l">
+                    
+                        <a href="/rps/index.html" title="RockPaperScissors Game" target="blank_"><img class="mywork-content-img" src="work/rock_paper_scissors_app.PNG"></a>
+                    
+                    </div>
+                
+                    <div class="mywork-content-box-r">
+                    <h4>Rock Paper Scissors</h4>
+                    <p>Wanting to practice my DOM skill and JavaScript, I put together a simple Rock Paper Scissors game. It counts how many times you play, how many times you've won, and calculates your win percentage.</p>
+                    
+                    
+                    
+                    </div>
+                </div>
+
+                 <div class="mywork-content-box">
+                    
+                    
+                    <div class="mywork-content-box-l">
+                    
+                        <a href="/calculator/index.html" title="My Calculator" target="blank_"><img class="mywork-content-img" src="work/calculator.PNG" id="calculator_image"></a>
+                    
+                    </div>
+                
+                    <div class="mywork-content-box-r">
+                    <h4>Calculator</h4>
+                    <p>A simple calculator made with HTML, CSS, and Javascript. Some features are missing, and there are bugs, but when are there never? My very first DOM based project. Definitely in need of a do-over.</p>
+                    
+                    
+                    
+                    </div>
+                </div>
+            
+            
+            
+            </section>
+        
+        </div>
+
+        <div id="resources-container" class="desktop-window hidden">
+            <div class="desktop-window-topbar">
+            <h2>RESOURCES</h2>
+                <ul class="desktop-window-nav">
+                    <li><img src="/photos/minimize_button.png" class="desktop-window-button minimize-button" id="resources_minimize_button" title="Minimize"> </li>
+                    <li><img src="/photos/maximize_button.png" class="desktop-window-button maximize-button" id="resources_maximize_button" title="Maxmize"> </li>
+                    <li><img src="/photos/close_button.png" class="desktop-window-button close-button" id="resources_close_button" title="Close"></li>
+                </ul>
+            </div>
+
+            <section id="resources-content">
+                <h3>Resources</h3>
+                <p>These are some of the valuable resources I've come across when building my projects, along with this site! <emphasis>All Links open to new windows!</emphasis></p>
+            
+                <h4>HTML</h4>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="blank_" title="Mozilla Developer Network HTML Documents">Mozilla Dev Network</a></li>
+                    <li><a href="https://www.w3schools.com/html/" target="blank_" title="w3Schools HTML">w3schools</a></li>
+
+                </ul>
+
+                <h4>CSS</h4>
+                <ul>
+                    <li><a href="https://css-tricks.com/" target="blank_" title="CSS-Tricks">CSS-Tricks (Notably Flexbox / Grid )</a></li>
+                    <li><a href="https://flexboxfroggy.com/" target="blank_" title="Flexbox Froggy - CSS Flexbox Based Game">Flexbox Froggy</a></li>
+                    <li><a href="https://www.w3schools.com/css/" target="blank_" title="w3Schools CSS">w3schools</a></li>
+
+                </ul>
+
+                <h4>Javascript</h4>
+                <ul>
+                    <li><a href="https://www.freecodecamp.org/" target="blank_" title="FreeCodeCamp">FreeCodeCamp</a></li>
+                    <li><a href="https://javascript.info/" target="blank_" title="Javascript.info - The Modern Javascript Tutorial">Javascript.info</a></li>
+                </ul>
+
+                <h4>YouTube Channels</h4>
+                <p>This section is for noteworthy YouTube Channels that have helped me immensely. I highly recommend them.</p>
+                <ul>
+                    <li><a href="https://www.youtube.com/user/TechGuyWeb" target="blank_" title="Traversy Media YouTube Channel">Traversy Media</a></li>
+                    <li><a href="https://www.youtube.com/c/WebDevSimplified" target="blank_" title="Web Dev Simplified YouTube Channel">Web Dev Simplified</a></li>
+                </ul>
+            
+            </section>
+        
+        </div>
+
+
+
+        <div id="logon_screen">
+
+            <div id="login-top">
+            
+            </div>
+            
+            <div id="login-middle">
+                <div id="login-middle-left">
+
+                    <img src="/photos/start_smiley.png" id="login_pic_left">
+                    <p>Welcome</p>
+                
+                </div>
+                <div id="login-middle-right">
+                        <p id="login-message">Please Login</p>
+                        <input type="text" id="username" placeholder=""><br>
+                        <input type="password" id="password" placeholder="">
+                        <button value="enter" id="login_button">Enter</button>
+                </div>
+            </div>
+        
+            <div id="login-bottom">
+            
+            </div>
+
+
+
+        </div> 
+
+        <div id="message-pop-up" class="hidden">
+
+            <p>Click Below to get started!</p>
+        
+        </div>
+
+        <div id="desktop_icon_container">
+            <div id="desktop-cat-picture-container">
+                <img src="/photos/xp_jpg.png" id="desktop-cat-picture-icon">
+                <p id="desktop-cat-picture-filename">Cute cat picture!</p>
+            </div>
+        </div>
+
+
+        <div id="cat-image-container" class="desktop-window hidden">
+            <div class="desktop-window-topbar">
+                <h2>Cute cat picture!</h2>
+                <ul class="desktop-window-nav">
+                    <li><img src="/photos/minimize_button.png" class="desktop-window-button minimize-button" id="cat_minimize_button" title="Minimize"> </li>
+                    <li><img src="/photos/maximize_button.png" class="desktop-window-button maximize-button" id="cat_maximize_button" title="Maxmize"> </li>
+                    <li><img src="/photos/close_button.png" class="desktop-window-button close-button" id="cat_close_button" title="Close"></li>
+                </ul>
+            </div>
+            
+                <img id="cat-content-image" src="/photos/cat-image.webp">
+            
+        </div>
+        
+
+    </main>
     
-    <a href="mason/index.html">Mason's Helping Paw</a>
-
-    <br><br><br>
-
-    <a href="tania/index.html">Tania Website</a>
-	
-	
-    <br><br><br>
-	
-	<a href="rps/index.html">Rock Paper Scissors </a>
-
-
 </body>
+<script src="/scripts/script.js">
+</script>
 </html>
