@@ -20,7 +20,7 @@ html{
 body{
     margin:0;
     padding:0;
-    background:url('/photos/bliss_background.webp')no-repeat center fixed;
+    background:url('https://sanobelk.github.io/photos/bliss_background.webp')no-repeat center fixed;
     overflow:hidden;
 }
 
