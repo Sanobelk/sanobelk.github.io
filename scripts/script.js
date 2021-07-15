@@ -218,7 +218,7 @@ mywork_maximize_button.addEventListener('click',function(){
         if(container.classList.contains('window-max')){ //if screen is maximied already
             container.style.left = 100 + 'px';
             container.style.bottom = 200 + 'px';
-            container.style.width = 500 + 'px';
+            container.style.width = 900 + 'px';
             container.style.height =  600 + 'px';
             container.style.top= '';
             container.querySelector('.desktop-window-topbar ul').style.height='';
@@ -350,8 +350,9 @@ let login_username = document.getElementById('username')
 let login_password = document.getElementById('password')
 let login_submit = document.getElementById('login_button');
 
-let username = '';
-let password = '';
+//set these to change user and password to login
+let username = 'admin';
+let password = 'password';
 
 let taskbar = document.querySelector('header');
 
