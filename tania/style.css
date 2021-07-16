@@ -284,7 +284,7 @@ footer a{
 }
 
 #road_to_tehran_album_cover{
-    margin-top:-30px;
+
 }
 
 @media screen and (min-width:1300px){
@@ -293,12 +293,16 @@ footer a{
         overflow-y:scroll;
         }
         #road_to_tehran_album_cover{
-        margin-top:0px;
         width:40vw;
         height:auto;
     }
 }
 
+@media screen and (max-width:1299px){
+    #road_to_tehran_album_cover{
+        width:800px;
+    }
+}
 
 /* CONCERTS */
 
@@ -442,4 +446,43 @@ footer a{
     height:80vh;
 
 }
+}
+
+
+.active_link{
+    background-color:darkgray;
+    color:white;
+}
+
+a {
+    text-decoration:none;
+    color:black;
+}
+
+.photo_container{
+    width:100%;
+    text-align:center;
+}
+
+.photo_container img{
+    margin:20px;
+    width:75%;
+    height:auto;
+    border:1px solid gray;
+    box-shadow:5px 5px 5px darkgray;
+}
+
+#photo_content{
+    margin-top:100px;
+}
+
+#h1_photos{
+    font-family: 'Gilda Display';
+    font-size: 3rem;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+#Tania_Name{
+    font-size:2rem;
 }
