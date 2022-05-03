@@ -61,7 +61,7 @@ function toggleMusic(bgm){
 
 scene = document.getElementById("scene");
 
-scene.src = '/images/scenes/town.jpg';
+scene.src = 'images/scenes/town.jpg';
 
 let save = document.getElementById('saveGame');
 
