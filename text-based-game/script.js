@@ -171,7 +171,7 @@ function visitShop(){
     playerInside = true;
     backButton.textContent = 'Back';
     backButton.style.background = 'brown';
-    scene.src = './images/scenes/shop.jpg';
+    scene.src = '/images/scenes/shop.jpg';
     console.log('you visit the shop');
     bgm.src = 'sounds/bgm/shop.mp3';
     bgm.play();
