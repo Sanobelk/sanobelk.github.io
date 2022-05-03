@@ -1,0 +1,200 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+#game_container {
+  border: 1px solid black;
+  height: 600px;
+  width: 800px;
+}
+
+#game_container #topScreen {
+  background-color: pink;
+  padding: 5px;
+  height: 70%;
+}
+
+#game_container #topScreen #sceneContainer {
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+}
+
+#game_container #topScreen #sceneContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+#game_container #topScreen #sceneContainer #musicButton {
+  width: 70px;
+  height: 50px;
+  z-index: 100;
+  position: relative;
+  top: -60px;
+}
+
+#game_container #topScreen #sceneContainer #musicButton:hover {
+  top: -65px;
+}
+
+#game_container #bottomScreen {
+  background-color: lightgreen;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#game_container #bottomScreen #bottomScreenLeft {
+  background-color: plum;
+  width: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#game_container #bottomScreen #bottomScreenLeft ul {
+  margin: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#game_container #bottomScreen #bottomScreenLeft ul li {
+  background-color: #72614c;
+  height: 20%;
+  color: white;
+  font-family: arial;
+  padding: 5px;
+  font-size: 16pt;
+  border-bottom: 1px solid black;
+}
+
+#game_container #bottomScreen #bottomScreenLeft #fileMenu {
+  background-color: tan;
+  border: 1px solid darkgoldenrod;
+  padding: 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#game_container #bottomScreen #bottomScreenLeft #fileMenu button {
+  margin: 10px;
+  width: 100px;
+  height: 25px;
+  background-color: #72614c;
+  color: white;
+  border: 1px solid black;
+  -webkit-box-shadow: 2px 2px 2px black;
+          box-shadow: 2px 2px 2px black;
+}
+
+#game_container #bottomScreen #bottomScreenLeft #fileMenu button:hover {
+  background-color: tan;
+  color: black;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+
+#game_container #bottomScreen #bottomScreenLeft #playerName, #game_container #bottomScreen #bottomScreenLeft #playerLevel, #game_container #bottomScreen #bottomScreenLeft #playerMoney {
+  color: yellow;
+}
+
+#game_container #bottomScreen #bottomScreenRight {
+  background-color: lightblue;
+  width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#game_container #bottomScreen #bottomScreenRight ul {
+  list-style-type: none;
+  background-color: pink;
+  margin: 0;
+  padding: 0;
+  height: 90%;
+  width: 100%;
+}
+
+#game_container #bottomScreen #bottomScreenRight ul li {
+  border-bottom: 1px solid black;
+  height: 25%;
+  width: 100%;
+  color: yellow;
+  background-color: #72614c;
+  font-family: cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#game_container #bottomScreen #bottomScreenRight ul li:hover {
+  color: white;
+  background-color: tan;
+}
+
+#game_container #bottomScreen #bottomScreenRight ul li .active {
+  color: white;
+  background-color: tan;
+}
+
+.modal {
+  position: absolute;
+  background-color: lightsteelblue;
+  font-family: arial;
+  font-size: 16pt;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

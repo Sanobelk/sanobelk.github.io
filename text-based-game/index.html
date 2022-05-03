@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="game_container">
+            <div id="topScreen">
+                <div id="sceneContainer">
+                    <img src="" alt="" id="scene">
+                    <img src="images/icons/ui/music_active.png" alt="" id="musicButton">
+                </div>
+            </div>
+            <div id="bottomScreen">
+                <div id="bottomScreenLeft">
+                    <ul id="bottomScreenLeftMenu">
+                        <li class="bottomScreenLeftMenu-item">Name: <span id="playerName"></span></li>
+                        <li class="bottomScreenLeftMenu-item">Level: <span id="playerLevel"></span></li>
+                        <li class="bottomScreenLeftMenu-item">Money: <span id="playerMoney"></span></li>
+                    </ul>
+                    <div id="fileMenu">
+                        <button id="saveGame">Save</button>
+                        <button id="loadGame">Load</button>
+                    </div>
+                </div>
+                    
+                <div id="bottomScreenRight">
+                    <ul id="bottomScreenRightMenu">
+                        <li class="bottomScreenRightMenu-item" id="tavernMenuButton">Tavern</li>
+                        <li class="bottomScreenRightMenu-item" id="shopMenuButton">Shop</li>
+                        <li class="bottomScreenRightMenu-item" id="innMenuButton">Inn</li>
+                        <li class="bottomScreenRightMenu-item" id="backMenuButton"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src= "script.js"></script>
+</html>

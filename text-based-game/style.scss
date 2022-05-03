@@ -1,0 +1,139 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+#game_container{
+    border:1px solid black;
+    height:600px;
+    width:800px;
+    #topScreen{
+        background-color:pink;
+        padding:5px;
+        height:70%;
+        #sceneContainer{
+            width:100%;
+            height:100%;
+            background-color:lightblue;
+            img{
+                width:100%;
+                height:100%;
+            }
+            #musicButton{
+            width:70px;
+            height:50px;
+            z-index:100;
+            position:relative;
+            top:-60px;
+            }
+            #musicButton:hover{
+                top:-65px;
+            }
+        }
+    }
+    #bottomScreen{
+        background-color:lightgreen;
+        height:30%;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        #bottomScreenLeft{
+            background-color:plum;
+            width:420px;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-around;
+            ul{
+                margin:auto;
+                list-style-type:none;
+                margin:0;
+                padding:0;
+                li{
+                    background-color:rgb(114, 97, 76);
+                    height:20%;
+                    color:white;
+                    font-family:arial;
+                    padding:5px;
+                    font-size:16pt;
+                    border-bottom:1px solid black;
+                }
+            }
+            #fileMenu{
+                
+                background-color:tan;
+                border:1px solid darkgoldenrod;
+                padding:0px;
+                width:100%;
+                display:flex;
+                justify-content:center;
+                button{
+                    margin:10px;
+                    width:100px;
+                    height:25px;
+                    background-color:rgb(114, 97, 76);
+                    color:white;
+                    border:1px solid black;
+                    box-shadow:2px 2px 2px black;
+                }
+                button:hover{
+                    background-color:tan;
+                    color:black;
+                    position:relative;
+                    top:3px;
+                    cursor:pointer;
+                }
+            }
+            #playerName, #playerLevel, #playerMoney{
+                color:yellow;
+            }
+        }
+        #bottomScreenRight{
+            background-color:lightblue;
+            width:340px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            ul{
+                list-style-type:none;
+                background-color:pink;
+                margin:0;
+                padding:0;
+                height:90%;
+                width:100%;
+                li{
+                    border-bottom:1px solid black;
+                    height:25%;
+                    width:100%;
+                    color:yellow;
+                    background-color:rgb(114, 97, 76);
+                    font-family:cursive;
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                }
+                li:hover{
+                    color:white;
+                    background-color:tan;
+                }
+                li .active{
+                    color:white;
+                    background-color:tan;
+                }
+            }
+        }
+    }
+}
+
+.modal{
+    position:absolute;
+    background-color:lightsteelblue;
+    font-family:arial;
+    font-size:16pt;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
